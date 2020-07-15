@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1>Movies App</h1>
+      <p>Another change</p>
       <MovieForm addMovie={addMovie} />
       {
         movies && <MovieList movies={movies} />
