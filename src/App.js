@@ -1,5 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import axios from 'axios'
+import MovieList from './components/MovieList'
+
 function App() {
   const [movies, setMovies] = useState(null)
 
@@ -12,7 +14,9 @@ function App() {
 
   return (
     <div className="App">
-
+      {
+        movies && <MovieList movies={movies} />
+      }
     </div>
   );
 }
