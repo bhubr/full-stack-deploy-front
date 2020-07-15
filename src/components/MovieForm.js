@@ -14,7 +14,7 @@ function MovieForm({ addMovie }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    axios.post('http://localhost:5000/api/movies', data)
+    axios.post('/api/movies', data)
       .then(res => res.data)
       .then(data => addMovie(data))
   }

@@ -7,7 +7,7 @@ function App() {
   const [movies, setMovies] = useState(null)
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/movies')
+    axios.get('/api/movies')
       .then(res => {
         setMovies(res.data)
       }) 
